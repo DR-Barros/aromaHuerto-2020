@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    font-family: Papyrus, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+}
+input, button{
+    font-family: Papyrus, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+h1, h2, h3, h4{
+    text-align: center;
+}
+.barranav{
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    height: 65px;
+    border-bottom: solid 1px black;
+}
+.Menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 10px;
+}
+
+.Menu-desplegable{
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: solid black 1px;
+    text-align: center;
+}
+.Menu-desplegable ul{
+    list-style: none;
+    padding:0;
+}
+.Menu-desplegable li{
+    padding: 5px 0;
+}
+.Menu-desplegable a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.Menu:hover nav, .Menu-desplegable:hover{
+    display: block;
+}
+.header-imgwraper{
+    margin: 0 auto;
+    width: 200px;
+}
+.header-img{
+    width: 100%;
+}
+.Carro{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Carro-boton{
+    height: 100%;
+    margin: 0 20px 0 auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.Carro-boton img{
+    width: 25px;
+    padding: 7.5px;
+    border-radius: 50%;
+    /* border: solid 1px black; */
+}
+.Carro span{
+    background-color: transparent;
+    margin-left: -14px;
+    margin-bottom: -26px;
+    height: 16px;
+    width: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Carro-tabla{
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 2px 5px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.Carro-tabla table{
+    width: 100%;
+}
+.Carro:hover div, .Carro-tabla:hover{
+    display: flex;
+}
+.button{
+    cursor: pointer;
+}
+.hero{
+    background-image: url(../recursos/huertas/0.jpg);
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    color: white;
+}
+.footer{
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 75px;
+    background-color: #333333;
+}
+.footer a{
+    color: white;
+}
+@media screen and (min-width: 480px){
+    .hero {
+        height: 150px;
+    }
+    .Carro-tabla{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 768px){
+    .Carro-tabla{
+        width: 600px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .barranav{
+        grid-template-columns: 1fr 450px 50px;
+    }
+    .Menu-boton{
+        display: none;
+    }
+    .Menu-desplegable{
+        display: block;
+        top: 0px;
+        left: unset;
+        right: unset;
+        background-color: transparent;
+        border-bottom: unset;
+    }
+    .Menu-desplegable ul{
+        display: flex;
+    }
+    .Menu-desplegable ul li{
+        padding: 2.5px;
+        margin: 0 2.5px;
+    }
+    .Menu-desplegable a{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .header-imgwraper{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin: 0 100px 0 auto;
+    }
+    .Carro-tabla{
+        width: 800px;
+    }
+}

@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+.registro{
+    margin: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+input{
+    margin: 5px 0;
+}
+.registro a{
+    margin-top: 10px;
+    padding: 0 15px;
+}
+@media screen and (min-width: 480px){
+    .registro{
+        border: 1px solid black;
+        margin: 25px;
+        border-radius: 25px;
+        padding: 30px 15px;
+    }   
+}
+@media screen and (min-width: 768px){
+    .registro{
+        margin: 75px;
+    }
+}

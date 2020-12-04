@@ -1,0 +1,55 @@
+.descripcion, .personas{
+    padding: 0 10px;
+    text-align: justify;
+}
+.descripcion{
+    max-width: 650px;
+    margin: 75px auto;
+}
+.personas{
+    max-width: 1000px;
+    margin: auto;
+}
+.imgwraper{
+    margin: 0;
+}
+.imgwraper img {
+    width: 100%;
+}
+.personas-text{
+    margin: 50px auto 75px;
+}
+.video-wraper{
+    margin: 0;
+}
+.video{
+    margin: 0 2vw;
+    width: 96vw;
+    height: 54vw;
+    max-width: 1000px;
+    max-height: 562.5px;
+}
+@media screen and (min-width: 480px){
+}
+@media screen and (min-width: 768px){
+    .descripcion, .personas{
+        padding: 0 25px;
+    }
+    .personas-text{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .personas-text p{
+        margin: 0 10px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1024px){
+    .video-wraper{
+        width: 1000px;
+        margin: auto;
+    }
+    .video{
+        margin: 0;
+    }
+}

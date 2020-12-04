@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+.articulo{
+    margin: 25px 15px;
+    text-align: center;
+}
+.articulo iframe{
+    width: 560px;
+    height: 315px;
+}

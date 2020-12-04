@@ -1,0 +1,184 @@
+.hero{
+    background-image: url(../recursos/index/hero.jpg);
+    height: 150px;
+    align-items: flex-end;
+}
+.hero h1{
+    background-color: rgba(61, 84, 61, 0.8);
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+}
+.contenido{
+    padding: 0 10px;
+    max-width: 1024px;
+    margin-top: 50px;
+}
+.contenido .text h2{
+    background-color: rgba(61, 84, 61, 0.8);
+    color: white;
+    position: relative;
+    margin: -65px auto 25px;
+    z-index: 1;
+}
+figure, img{
+    width: 100%;
+    margin: 0;
+}
+.link{
+    background-color: rgba(61, 84, 61, 0.8);
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+.link a{
+    color: white;
+    text-decoration: none;
+    border: solid white 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.link a:hover{
+    color: rgba(61, 84, 61, 0.8);
+    background-color: white;
+}
+.contacto{
+    max-width: 1024px;
+    margin: 0 15px;
+}
+.contacto .boton{
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(61, 84, 61, 0.6);
+}
+@media screen and (min-width: 480px){
+    .hero{
+        height: 250px;
+    }
+    .link div{
+        display: flex;
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+    .link p{
+        width: 75%;
+    }
+    .link a{
+        align-self: center;
+        margin: 0 auto;
+    }   
+}
+@media screen and (min-width: 768px){
+    .hero{
+        height: 350px;
+    }
+    .hero h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 40px;    
+    }
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px auto 0;
+    }
+    .contenido .text h2{
+        margin: 15px 0 35px -300px;
+        padding: 5px;
+        text-align: end;
+        font-size: 35px;
+    }
+    .descripcion{
+        background-color: rgba(149, 55, 53, 0.5);
+        padding: 5px;
+        font-size: 17px;
+    }
+    .descripcion b{
+        font-size: 20px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px;
+    }
+    .img{
+        align-self: center;
+    }
+    .contacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto h2{
+        width: 100%;
+    }
+    .contacto_descripcion{
+        display: flex;
+    }
+    .contacto_descripcion p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        width: 50%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+    .contacto_descripcion p span{
+        font-weight: bold;
+    }
+    .contacto figure{
+        width: 50%;
+        padding: 0 50px 0 0;
+        text-align: end;
+        box-sizing: border-box;  
+    }
+    .contacto figure img{
+        max-width: 400px;
+        margin: 0 auto 0 0;
+    }
+    .contacto .boton{
+        margin: 2.5%;
+        width: 45%;
+    }
+    .boton_descripcion{
+        display: none;
+    }
+    .contacto .boton:hover .boton_descripcion{
+        display: block;
+    }
+    .contacto .boton:hover .titulo{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+    .hero{
+        height: 450px;
+    }
+    .contenido .text h2{
+        margin: 15px 0 35px -400px;
+        font-size: 50px;
+    }
+    .descripcion{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .descripcion b{
+        font-size: 25px;
+    }
+    .contacto{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1440px){
+    .hero{
+        height: 600px;
+    }
+}
+@media screen and (min-width: 2560px){
+    .hero{
+        height: 1100px;
+    }
+}

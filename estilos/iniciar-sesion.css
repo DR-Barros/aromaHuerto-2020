@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+.sesionBox{
+    margin: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+input{
+    margin: 5px 0;
+}
+.sesionBox a{
+    padding: 3px 15px;
+}
+@media screen and (min-width: 480px){
+    .sesionBox{
+        border: 1px solid black;
+        margin: 25px;
+        border-radius: 25px;
+        padding: 30px 15px;
+    }   
+}
+@media screen and (min-width: 768px){
+    .sesionBox{
+        margin: 75px;
+    }
+}

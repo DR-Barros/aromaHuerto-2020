@@ -1,0 +1,26 @@
+table{
+    margin: 25px 15px;
+}
+article{
+    padding: 0 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:480px){
+    article{
+        margin: 50px auto;
+        border: 1px solid black;
+        border-radius: 25px;
+        width: 90%;
+        max-width: 1000px;
+        padding: 15px 15px 25px;
+    }
+}
+@media screen and (min-width: 1024px){
+    table{
+        margin: 50px auto;
+        max-width: 1000px;
+    }
+}

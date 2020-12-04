@@ -1,0 +1,156 @@
+.exposicion{
+    max-width: 1024px;
+    margin: 50px auto;
+}
+.exposicion div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.exposicion button{
+    margin: 5px;
+    padding: 5px;
+    width: 240px;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid rgba(61, 84, 61, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.exposicion button p{
+    margin: 0;
+}
+.buttonselected{
+    font-weight: bold;
+    border-width: 7.5px !important;
+    border-color: rgb(61, 84, 61) !important;
+}
+.buttonselected img{
+    width: 75px;
+}
+.buttonunselected{
+    border-color: gray !important;
+}
+.buttonunselected img{
+    width: 50px;
+}
+.huertawraper{
+    max-width: 1024px;
+    margin: 50px auto;
+}
+.huerta{
+    margin: 5px auto;
+    height:500px; 
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(4, 125px);
+    background-image: url("../recursos/tierra.jpg");
+    background-size: cover;
+}
+.huerta-maceta{
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    grid-template-rows: repeat(2, 62.5px);
+}
+.huerta-maceta div{
+    text-align: center;
+}
+.huerta div img{
+    margin: 0 auto;
+    color: white;
+    justify-content: center;
+}
+.huerta-productos{
+    height: 100%;
+    cursor: pointer;
+}
+.huerta-botones{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.huerta-botones button{
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.huerta-botones button img, .huerta button img{
+    height: 50px;
+}
+#Carro{
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.fichas_wraper{
+    max-width: 1366px;
+    margin: 0 15px;
+}
+.fichas_wraper .fichas{
+    width: 100%;
+    margin: 0;
+}
+.fichas_wraper .fichas img{
+    width: 100%;
+}
+@media screen and (min-width: 480px){
+    .fichas_wraper div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+    /* .fichas:hover{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    } */
+}
+@media screen and (min-width: 768px){
+    .huerta{
+        height: 200px;
+        width: 750px;
+        padding: 5px;
+        grid-template-columns: repeat(4, 187.5px);
+        grid-template-rows: 200px;
+    }
+    .huerta-maceta{
+        grid-template-columns: repeat(2, 88.75px);
+        grid-template-rows: repeat(2, 95px);
+        background-color: rgba(0, 255, 0, 0.1);
+        margin: 5px;
+        border-radius: 20px;
+    }
+    .huerta-botones{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .huerta-botones button img, .huerta button img{
+        height: 75px;
+    }
+    #Carro{
+        align-self: center;
+    }
+    .fichas_wraper div{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .huerta-botones{
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .huerta-botones button img, .huerta button img{
+        height: 75px;
+    }
+    .fichas_wraper{
+        margin: 0 auto;
+    }
+    .fichas_wraper div{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 15px;
+    }
+}
